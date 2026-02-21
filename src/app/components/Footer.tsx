@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { Code2, Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+
+import devoraMarkUrl from "@/assets/devora-mark.svg";
 
 export function Footer() {
   return (
@@ -9,11 +11,13 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-blue-600 p-2 rounded-lg">
-                <Code2 className="h-6 w-6 text-white" />
-              </div>
+              <img
+                src={devoraMarkUrl}
+                alt="Devora"
+                className="h-11 w-11 rounded-lg shadow-sm ring-1 ring-white/10"
+              />
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-white leading-none">Java<span className="text-blue-400">Tech</span></span>
+                <span className="text-xl font-bold text-white leading-none tracking-tight">Devora</span>
                 <span className="text-xs text-slate-400 font-medium tracking-wide">EDUTECH SOLUTIONS</span>
               </div>
             </div>
@@ -81,7 +85,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} JavaTech Edutech Solutions. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Devora Edutech Solutions. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-slate-300 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-slate-300 transition-colors">Terms of Service</a>

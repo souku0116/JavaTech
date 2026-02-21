@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Code2, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
+
+import devoraMarkUrl from "@/assets/devora-mark.svg";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,11 +28,13 @@ export function Navbar() {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-2 group">
-              <div className="bg-blue-900 p-2 rounded-lg group-hover:bg-blue-800 transition-colors">
-                <Code2 className="h-6 w-6 text-white" />
-              </div>
+              <img
+                src={devoraMarkUrl}
+                alt="Devora"
+                className="h-11 w-11 rounded-lg shadow-sm ring-1 ring-black/5"
+              />
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-slate-900 leading-none">Java<span className="text-blue-600">Tech</span></span>
+                <span className="text-xl font-bold text-slate-900 leading-none tracking-tight">Devora</span>
                 <span className="text-xs text-slate-500 font-medium tracking-wide">EDUTECH SOLUTIONS</span>
               </div>
             </Link>

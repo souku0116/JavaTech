@@ -7,7 +7,7 @@ export default function About() {
       <div className="bg-slate-900 text-white py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About JavaTech</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Devora</h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             We are a mission-driven EdTech company committed to democratizing technology education.
           </p>
@@ -20,7 +20,7 @@ export default function About() {
           <div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              At JavaTech, we believe that quality education should be accessible to everyone, regardless of their financial background. Our mission is to bridge the gap between academic learning and industry requirements.
+              At Devora, we believe that quality education should be accessible to everyone, regardless of their financial background. Our mission is to bridge the gap between academic learning and industry requirements.
             </p>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
               We combine professional corporate training with social responsibility, ensuring that for every paid enrollment, we contribute towards our free educational campaigns for underprivileged students.
