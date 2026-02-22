@@ -8,9 +8,9 @@ export default function Home() {
       <section className="relative bg-slate-900 text-white pt-24 pb-32 overflow-hidden">
         {/* Background Overlay */}
         <div className="absolute inset-0 z-0 opacity-20">
-          <img 
-            src="https://images.unsplash.com/photo-1565687981296-535f09db714e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920" 
-            alt="Java Code Background" 
+          <img
+            src="https://images.unsplash.com/photo-1565687981296-535f09db714e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            alt="Java Code Background"
             className="w-full h-full object-cover"
           />
         </div>
@@ -24,27 +24,33 @@ export default function Home() {
             </span>
             New Internship Batch Starting Soon
           </div>
-          
+
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-            Build Your Career in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Java Development</span>.
+            Build Your Career in{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
+              Java Development
+            </span>
+            .
             <br />
             <span className="block mt-2 text-white">Learn. Code. Get Hired.</span>
           </h1>
-          
+
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 mb-10 leading-relaxed">
-            Master industry-standard Java development through hands-on live coding and real-world projects. We empower students with job-ready skills and provide free training campaigns for deserving candidates.
+            Master industry-standard Java development through hands-on live coding and real-world
+            projects. We empower students with job-ready skills and provide free training campaigns
+            for deserving candidates.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            <Link 
-              to="/campaigns" 
+            <Link
+              to="/campaigns"
               className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-semibold rounded-lg text-white bg-blue-600 hover:bg-blue-700 md:text-lg transition-all shadow-lg hover:shadow-blue-500/25"
             >
               Apply for Free Campaign
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            <Link 
-              to="/programs" 
+            <Link
+              to="/programs"
               className="inline-flex items-center justify-center px-8 py-4 border border-slate-600 text-base font-semibold rounded-lg text-slate-200 bg-slate-800/50 hover:bg-slate-800 hover:text-white md:text-lg transition-all"
             >
               Explore Courses
@@ -54,7 +60,9 @@ export default function Home() {
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center w-full max-w-4xl mx-auto border-t border-slate-800 pt-8">
             <div>
               <p className="text-3xl font-bold text-white">5000+</p>
-              <p className="text-slate-400 text-sm uppercase tracking-wider mt-1">Students Trained</p>
+              <p className="text-slate-400 text-sm uppercase tracking-wider mt-1">
+                Students Trained
+              </p>
             </div>
             <div>
               <p className="text-3xl font-bold text-white">120+</p>
@@ -62,7 +70,9 @@ export default function Home() {
             </div>
             <div>
               <p className="text-3xl font-bold text-white">50+</p>
-              <p className="text-slate-400 text-sm uppercase tracking-wider mt-1">Hiring Partners</p>
+              <p className="text-slate-400 text-sm uppercase tracking-wider mt-1">
+                Hiring Partners
+              </p>
             </div>
             <div>
               <p className="text-3xl font-bold text-white">95%</p>
@@ -78,9 +88,9 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="absolute -inset-4 bg-blue-100 rounded-2xl transform -rotate-3"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" 
-                alt="Students learning" 
+              <img
+                src="https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                alt="Students learning"
                 className="relative rounded-xl shadow-2xl w-full object-cover h-[500px]"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-xl border border-gray-100 max-w-xs">
@@ -95,38 +105,45 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             <div>
-              <h2 className="text-blue-600 font-semibold tracking-wide uppercase text-sm mb-3">About Us</h2>
+              <h2 className="text-blue-600 font-semibold tracking-wide uppercase text-sm mb-3">
+                About Us
+              </h2>
               <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
                 Bridging the Gap Between Education & Industry
               </h3>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                We are an educational tech company dedicated to transforming students and graduates into industry-ready professionals. Our mission goes beyond business—we believe in equal opportunity.
+                We are an educational tech company dedicated to transforming students and graduates
+                into industry-ready professionals. Our mission goes beyond business—we believe in
+                equal opportunity.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                Through our unique <span className="font-semibold text-blue-700">Free Educational Campaigns</span>, we select deserving candidates from colleges, orphanages, and government communities to receive complete, high-quality training at no cost.
+                Through our unique{" "}
+                <span className="font-semibold text-blue-700">Free Educational Campaigns</span>, we
+                select deserving candidates from colleges, orphanages, and government communities to
+                receive complete, high-quality training at no cost.
               </p>
-              
+
               <ul className="space-y-4 mb-8">
                 {[
                   "Job-oriented practical training",
                   "Social impact through free education",
                   "Mentorship from industry experts",
-                  "Dedicated placement support"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3">
+                  "Dedicated placement support",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
                     <span className="text-slate-700 font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
 
-              <Link 
-                to="/about" 
+              <Link
+                to="/about"
                 className="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2 group"
               >
-                Learn more about our mission 
+                Learn more about our mission
                 <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -138,9 +155,12 @@ export default function Home() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Comprehensive Java Programs</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              Comprehensive Java Programs
+            </h2>
             <p className="text-lg text-slate-600">
-              From basics to advanced frameworks, our curriculum is designed to make you a full-stack developer ready for the modern tech landscape.
+              From basics to advanced frameworks, our curriculum is designed to make you a
+              full-stack developer ready for the modern tech landscape.
             </p>
           </div>
 
@@ -154,9 +174,15 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Core Java Mastery</h3>
                 <p className="text-slate-600 mb-6">
-                  Master the fundamentals of Java, OOPs concepts, Collections, and Multithreading with hands-on examples.
+                  Master the fundamentals of Java, OOPs concepts, Collections, and Multithreading
+                  with hands-on examples.
                 </p>
-                <Link to="/programs" className="text-blue-600 font-semibold text-sm hover:underline">View Curriculum &rarr;</Link>
+                <Link
+                  to="/programs"
+                  className="text-blue-600 font-semibold text-sm hover:underline"
+                >
+                  View Curriculum &rarr;
+                </Link>
               </div>
             </div>
 
@@ -169,9 +195,15 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Advanced Frameworks</h3>
                 <p className="text-slate-600 mb-6">
-                  Deep dive into Spring Boot, Hibernate, and Microservices architecture to build scalable enterprise applications.
+                  Deep dive into Spring Boot, Hibernate, and Microservices architecture to build
+                  scalable enterprise applications.
                 </p>
-                <Link to="/programs" className="text-indigo-600 font-semibold text-sm hover:underline">View Curriculum &rarr;</Link>
+                <Link
+                  to="/programs"
+                  className="text-indigo-600 font-semibold text-sm hover:underline"
+                >
+                  View Curriculum &rarr;
+                </Link>
               </div>
             </div>
 
@@ -184,16 +216,22 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Full Stack & Tools</h3>
                 <p className="text-slate-600 mb-6">
-                  Complete your stack with React, SQL, Git, Docker, and Maven. Build end-to-end real-world projects.
+                  Complete your stack with React, SQL, Git, Docker, and Maven. Build end-to-end
+                  real-world projects.
                 </p>
-                <Link to="/programs" className="text-teal-600 font-semibold text-sm hover:underline">View Curriculum &rarr;</Link>
+                <Link
+                  to="/programs"
+                  className="text-teal-600 font-semibold text-sm hover:underline"
+                >
+                  View Curriculum &rarr;
+                </Link>
               </div>
             </div>
           </div>
-          
+
           <div className="mt-12 text-center">
-            <Link 
-              to="/programs" 
+            <Link
+              to="/programs"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 transition-colors"
             >
               See All Programs
@@ -210,10 +248,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="md:w-1/2">
-              <span className="text-blue-400 font-semibold tracking-wide uppercase text-sm mb-2 block">Social Impact</span>
+              <span className="text-blue-400 font-semibold tracking-wide uppercase text-sm mb-2 block">
+                Social Impact
+              </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Free Educational Campaigns</h2>
               <p className="text-lg text-slate-300 mb-6">
-                We believe talent is everywhere, but opportunity is not. Our free campaigns identify bright minds from underrepresented communities and provide them with world-class training, completely free of cost.
+                We believe talent is everywhere, but opportunity is not. Our free campaigns identify
+                bright minds from underrepresented communities and provide them with world-class
+                training, completely free of cost.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-4">
@@ -222,7 +264,9 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white">Merit-Based Selection</h4>
-                    <p className="text-sm text-slate-400">Strict selection process to identify the most dedicated students.</p>
+                    <p className="text-sm text-slate-400">
+                      Strict selection process to identify the most dedicated students.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -231,19 +275,21 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white">100% Placement Support</h4>
-                    <p className="text-sm text-slate-400">From resume building to interview prep, we guide you till you get hired.</p>
+                    <p className="text-sm text-slate-400">
+                      From resume building to interview prep, we guide you till you get hired.
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="flex gap-4">
-                <Link 
-                  to="/campaigns" 
+                <Link
+                  to="/campaigns"
                   className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-lg text-blue-900 bg-white hover:bg-slate-100 transition-colors"
                 >
                   Learn More
                 </Link>
-                <Link 
-                  to="/contact" 
+                <Link
+                  to="/contact"
                   className="inline-flex items-center justify-center px-6 py-3 border border-white/30 text-base font-semibold rounded-lg text-white hover:bg-white/10 transition-colors"
                 >
                   Partner With Us
@@ -252,9 +298,9 @@ export default function Home() {
             </div>
             <div className="md:w-1/2">
               <div className="bg-slate-800/50 backdrop-blur-sm p-2 rounded-2xl border border-slate-700">
-                <img 
-                  src="https://images.unsplash.com/photo-1646579885920-0c9a01cb7078?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" 
-                  alt="Campaign Workshop" 
+                <img
+                  src="https://images.unsplash.com/photo-1646579885920-0c9a01cb7078?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  alt="Campaign Workshop"
                   className="rounded-xl w-full"
                 />
               </div>
@@ -268,10 +314,11 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to Start Your Career?</h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            If you've been selected through our campaign, register now for the upcoming internship batch. Seats are limited.
+            If you've been selected through our campaign, register now for the upcoming internship
+            batch. Seats are limited.
           </p>
-          <Link 
-            to="/internship-registration" 
+          <Link
+            to="/internship-registration"
             className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-700 text-lg font-bold rounded-full shadow-xl hover:shadow-2xl hover:bg-slate-50 transform hover:-translate-y-1 transition-all"
           >
             Register for Internship Batch

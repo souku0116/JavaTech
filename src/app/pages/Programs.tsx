@@ -5,7 +5,8 @@ export default function Programs() {
   const programs = [
     {
       title: "Core Java Development",
-      description: "Build a strong foundation in Java programming. Perfect for beginners and refreshers.",
+      description:
+        "Build a strong foundation in Java programming. Perfect for beginners and refreshers.",
       icon: <Code className="h-6 w-6 text-orange-500" />,
       color: "border-orange-500",
       bg: "bg-orange-50",
@@ -15,8 +16,8 @@ export default function Programs() {
         "Multithreading & Concurrency",
         "Java 8+ Features (Lambdas, Streams)",
         "File Handling & I/O",
-        "JDBC & Database Connectivity"
-      ]
+        "JDBC & Database Connectivity",
+      ],
     },
     {
       title: "Advanced Java Frameworks",
@@ -30,12 +31,13 @@ export default function Programs() {
         "Hibernate & JPA",
         "Microservices Architecture",
         "Spring Security & JWT",
-        "Unit Testing with JUnit & Mockito"
-      ]
+        "Unit Testing with JUnit & Mockito",
+      ],
     },
     {
       title: "Full Stack Java Developer",
-      description: "Become a complete developer by mastering both frontend and backend technologies.",
+      description:
+        "Become a complete developer by mastering both frontend and backend technologies.",
       icon: <Layers className="h-6 w-6 text-purple-500" />,
       color: "border-purple-500",
       bg: "bg-purple-50",
@@ -45,8 +47,8 @@ export default function Programs() {
         "Tailwind CSS & Responsive Design",
         "Integrating React with Spring Boot",
         "Deployment (AWS/Azure Basics)",
-        "CI/CD Pipelines"
-      ]
+        "CI/CD Pipelines",
+      ],
     },
     {
       title: "Tools & DevOps",
@@ -60,9 +62,9 @@ export default function Programs() {
         "Docker & Containerization",
         "Jenkins & CI/CD",
         "Postman for API Testing",
-        "Linux Basics"
-      ]
-    }
+        "Linux Basics",
+      ],
+    },
   ];
 
   return (
@@ -71,26 +73,34 @@ export default function Programs() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Training Programs</h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Industry-aligned curriculum designed to transform you from a student to a professional developer.
+            Industry-aligned curriculum designed to transform you from a student to a professional
+            developer.
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {programs.map((program, index) => (
-            <div key={index} className={`bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow border-t-4 ${program.color} border-x border-b border-gray-100`}>
-              <div className={`w-14 h-14 ${program.bg} rounded-xl flex items-center justify-center mb-6`}>
+          {programs.map((program) => (
+            <div
+              key={program.title}
+              className={`bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow border-t-4 ${program.color} border-x border-b border-gray-100`}
+            >
+              <div
+                className={`w-14 h-14 ${program.bg} rounded-xl flex items-center justify-center mb-6`}
+              >
                 {program.icon}
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-3">{program.title}</h3>
               <p className="text-slate-600 mb-8">{program.description}</p>
-              
+
               <div className="space-y-3">
-                <h4 className="font-semibold text-slate-900 text-sm uppercase tracking-wide">What you'll learn:</h4>
+                <h4 className="font-semibold text-slate-900 text-sm uppercase tracking-wide">
+                  What you'll learn:
+                </h4>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {program.topics.map((topic, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                  {program.topics.map((topic) => (
+                    <li key={topic} className="flex items-start gap-2 text-sm text-slate-700">
                       <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>{topic}</span>
                     </li>
@@ -115,42 +125,51 @@ export default function Programs() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <div className="h-40 bg-blue-100 rounded-lg mb-6 flex items-center justify-center">
-                 <Globe className="h-16 w-16 text-blue-400" />
+                <Globe className="h-16 w-16 text-blue-400" />
               </div>
               <h3 className="text-lg font-bold mb-2">E-Commerce Platform</h3>
               <p className="text-sm text-slate-600 mb-4">
-                Build a full-featured shopping cart with payment gateway integration using Spring Boot and React.
+                Build a full-featured shopping cart with payment gateway integration using Spring
+                Boot and React.
               </p>
               <div className="flex gap-2">
-                <span className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">Spring Boot</span>
+                <span className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">
+                  Spring Boot
+                </span>
                 <span className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">React</span>
               </div>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <div className="h-40 bg-indigo-100 rounded-lg mb-6 flex items-center justify-center">
-                 <Database className="h-16 w-16 text-indigo-400" />
+                <Database className="h-16 w-16 text-indigo-400" />
               </div>
               <h3 className="text-lg font-bold mb-2">Hospital Management System</h3>
               <p className="text-sm text-slate-600 mb-4">
-                Create a secure patient management system with appointment booking and record keeping.
+                Create a secure patient management system with appointment booking and record
+                keeping.
               </p>
               <div className="flex gap-2">
-                <span className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">Hibernate</span>
+                <span className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">
+                  Hibernate
+                </span>
                 <span className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">MySQL</span>
               </div>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <div className="h-40 bg-teal-100 rounded-lg mb-6 flex items-center justify-center">
-                 <BookOpen className="h-16 w-16 text-teal-400" />
+                <BookOpen className="h-16 w-16 text-teal-400" />
               </div>
               <h3 className="text-lg font-bold mb-2">LMS Dashboard</h3>
               <p className="text-sm text-slate-600 mb-4">
-                Develop a learning management system for schools to manage students, courses, and exams.
+                Develop a learning management system for schools to manage students, courses, and
+                exams.
               </p>
               <div className="flex gap-2">
-                <span className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">Microservices</span>
+                <span className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">
+                  Microservices
+                </span>
                 <span className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">Docker</span>
               </div>
             </div>
@@ -161,8 +180,18 @@ export default function Programs() {
       <div className="bg-blue-900 py-16 text-center text-white">
         <h2 className="text-3xl font-bold mb-6">Ready to Start Learning?</h2>
         <div className="flex gap-4 justify-center">
-           <Link to="/contact" className="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors">Enquire Now</Link>
-           <Link to="/internship-registration" className="border border-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors">Join Internship</Link>
+          <Link
+            to="/contact"
+            className="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+          >
+            Enquire Now
+          </Link>
+          <Link
+            to="/internship-registration"
+            className="border border-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors"
+          >
+            Join Internship
+          </Link>
         </div>
       </div>
     </div>

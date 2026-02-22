@@ -20,10 +20,14 @@ export default function About() {
           <div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              At Devora, we believe that quality education should be accessible to everyone, regardless of their financial background. Our mission is to bridge the gap between academic learning and industry requirements.
+              At Devora, we believe that quality education should be accessible to everyone,
+              regardless of their financial background. Our mission is to bridge the gap between
+              academic learning and industry requirements.
             </p>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              We combine professional corporate training with social responsibility, ensuring that for every paid enrollment, we contribute towards our free educational campaigns for underprivileged students.
+              We combine professional corporate training with social responsibility, ensuring that
+              for every paid enrollment, we contribute towards our free educational campaigns for
+              underprivileged students.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6">
@@ -54,24 +58,24 @@ export default function About() {
       {/* Stats Strip */}
       <div className="bg-slate-100 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-             <div>
-               <div className="text-4xl font-bold text-blue-900 mb-2">5000+</div>
-               <div className="text-slate-600 font-medium">Students Trained</div>
-             </div>
-             <div>
-               <div className="text-4xl font-bold text-blue-900 mb-2">15+</div>
-               <div className="text-slate-600 font-medium">College Partners</div>
-             </div>
-             <div>
-               <div className="text-4xl font-bold text-blue-900 mb-2">120+</div>
-               <div className="text-slate-600 font-medium">Free Campaigns</div>
-             </div>
-             <div>
-               <div className="text-4xl font-bold text-blue-900 mb-2">300+</div>
-               <div className="text-slate-600 font-medium">Placements</div>
-             </div>
-           </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold text-blue-900 mb-2">5000+</div>
+              <div className="text-slate-600 font-medium">Students Trained</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-blue-900 mb-2">15+</div>
+              <div className="text-slate-600 font-medium">College Partners</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-blue-900 mb-2">120+</div>
+              <div className="text-slate-600 font-medium">Free Campaigns</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-blue-900 mb-2">300+</div>
+              <div className="text-slate-600 font-medium">Placements</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

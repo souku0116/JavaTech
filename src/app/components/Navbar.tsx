@@ -3,19 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { clsx } from "clsx";
 
-import devoraMarkUrl from "@/assets/devora-mark.svg";
+import { Brand } from "@/app/components/Brand";
+import { MAIN_NAV_LINKS } from "@/app/config/site";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-
-  const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "Programs", path: "/programs" },
-    { name: "Campaigns", path: "/campaigns" },
-    { name: "Contact", path: "/contact" },
-  ];
 
   const isActive = (path: string) => {
     if (path === "/" && location.pathname !== "/") return false;
@@ -27,36 +20,32 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center gap-2 group">
-              <img
-                src={devoraMarkUrl}
-                alt="Devora"
-                className="h-11 w-11 rounded-lg shadow-sm ring-1 ring-black/5"
+            <Link to="/" className="flex-shrink-0">
+              <Brand
+                logoClassName="shadow-sm ring-1 ring-black/5"
+                nameClassName="text-slate-900"
+                taglineClassName="text-slate-500"
               />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-slate-900 leading-none tracking-tight">Devora</span>
-                <span className="text-xs text-slate-500 font-medium tracking-wide">EDUTECH SOLUTIONS</span>
-              </div>
             </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            {navLinks.map((link) => (
+            {MAIN_NAV_LINKS.map((link) => (
               <Link
-                key={link.name}
-                to={link.path}
+                key={link.to}
+                to={link.to}
                 className={clsx(
                   "text-sm font-medium transition-colors duration-200 border-b-2 py-1",
-                  isActive(link.path)
+                  isActive(link.to)
                     ? "text-blue-700 border-blue-700"
-                    : "text-slate-600 border-transparent hover:text-blue-600 hover:border-blue-200"
+                    : "text-slate-600 border-transparent hover:text-blue-600 hover:border-blue-200",
                 )}
               >
-                {link.name}
+                {link.label}
               </Link>
             ))}
-            
+
             <div className="flex items-center gap-4 pl-4 border-l border-gray-200">
               <Link
                 to="/internship-registration"
@@ -94,19 +83,19 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-b border-gray-100 shadow-lg absolute w-full left-0 z-40 animate-in slide-in-from-top-2 duration-200">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navLinks.map((link) => (
+            {MAIN_NAV_LINKS.map((link) => (
               <Link
-                key={link.name}
-                to={link.path}
+                key={link.to}
+                to={link.to}
                 onClick={() => setIsOpen(false)}
                 className={clsx(
                   "block px-3 py-3 rounded-md text-base font-medium",
-                  isActive(link.path)
+                  isActive(link.to)
                     ? "bg-blue-50 text-blue-700"
-                    : "text-slate-600 hover:bg-gray-50 hover:text-blue-600"
+                    : "text-slate-600 hover:bg-gray-50 hover:text-blue-600",
                 )}
               >
-                {link.name}
+                {link.label}
               </Link>
             ))}
             <div className="border-t border-gray-100 my-2 pt-2">

@@ -2,7 +2,6 @@
 
 React + Vite project for the Educational Tech Company website design.
 
-
 ## Tech Stack
 
 - React 18
